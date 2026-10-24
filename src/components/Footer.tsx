@@ -1,0 +1,2 @@
+import { Activity } from 'lucide-react'
+export function Footer() { return <footer className="footer"><div className="footer-brand"><span className="brand-mark mini-mark">T<span>V</span></span><span>TradeVision</span></div><p>Projeto desenvolvido para fins educacionais e demonstração de habilidades em desenvolvimento web.</p><span className="footer-status"><Activity size={13}/> Ambiente demonstrativo</span></footer> }

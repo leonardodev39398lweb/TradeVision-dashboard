@@ -1,0 +1,3 @@
+import { ArrowUpRight, Clock3, Newspaper } from 'lucide-react'
+import { news } from '../data'
+export function MarketNews() { return <section id="history" className="panel news-panel"><div className="section-heading"><div><div className="eyebrow">FIQUE POR DENTRO</div><h2>Radar do mercado</h2></div><Newspaper size={18} className="heading-icon"/></div><div className="news-list">{news.map(item => <article className="news-item" key={item.category}><div className="news-meta"><span className={`news-category ${item.color}`}>{item.category}</span><span><Clock3 size={12}/>{item.time}</span></div><h3>{item.title}</h3><div className="news-bottom"><span>Conteúdo fictício</span><ArrowUpRight size={14}/></div></article>)}</div></section> }
